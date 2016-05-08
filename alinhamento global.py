@@ -70,7 +70,6 @@ def align(A,B):
         scoreDiag = F[i-1][j-1]
         scoreUp = F[i][j-1]
         scoreLeft = F[i-1][j]
-        print score==scoreDiag + penalty(A[i-1],B[j-1])
         if(score==scoreDiag + penalty(A[i-1],B[j-1])):
             if(AlignmentA=="" and AlignmentB==""):
                 AlignmentA = A[i]+AlignmentA
